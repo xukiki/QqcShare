@@ -215,7 +215,7 @@
 #pragma mark - 创建界面元素
 - (void)createUI
 {
-    NSString* strPath = [[NSBundle mainBundle] pathForResource:@"QqcShareFrameworkRES" ofType:@"bundle"];
+    NSString* strPath = [[NSBundle mainBundle] pathForResource:@"QqcShare" ofType:@"bundle"];
     NSBundle* bundle = nil;
     if (strPath)
     {
