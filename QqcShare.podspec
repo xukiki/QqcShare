@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.name         = "QqcShare"
-  s.version      = "1.0.74"
+  s.version      = "1.0.76"
   s.summary      = "QqcShare"
   s.homepage     = "https://github.com/xukiki/QqcShare"
   s.source       = { :git => "https://github.com/xukiki/QqcShare.git", :tag => "#{s.version}" }
@@ -28,16 +28,9 @@ Pod::Spec.new do |s|
 
   s.subspec 'ShareProcess' do |sp|
     sp.dependency 'QqcShare/Header'
-    sp.dependency 'QqcShare/Views'
     sp.source_files = 'QqcShare/ShareProcess/*.{h,m}'
-  end
-
-  s.subspec 'Views' do |sp|
-    sp.dependency 'QqcShare/Header'
-    sp.dependency 'QqcShare/ShareProcess'
-    sp.source_files = 'QqcShare/Views/*.{h,m}'
     sp.subspec 'Panel' do |ssp|
-      ssp.source_files = 'QqcShare/Views/Panel/*.{h,m}'
+      ssp.source_files = 'QqcShare/ShareProcess/Panel/*.{h,m}'
     end
   end
 
