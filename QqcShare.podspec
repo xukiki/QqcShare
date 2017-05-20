@@ -6,32 +6,20 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.name         = "QqcShare"
-  s.version      = "1.0.76"
+  s.version      = "1.0.78"
   s.summary      = "QqcShare"
   s.homepage     = "https://github.com/xukiki/QqcShare"
   s.source       = { :git => "https://github.com/xukiki/QqcShare.git", :tag => "#{s.version}" }
   
   s.resource = 'QqcShare/QqcShare.bundle'
 
-  s.subspec 'Header' do |sp|
-    sp.source_files = 'QqcShare/Header/*.{h,m}'
-  end
-
-  s.subspec 'AuthLoginProcess' do |sp|
-    sp.dependency 'QqcShare/Header'
-    sp.source_files = 'QqcShare/AuthLoginProcess/*.{h,m}'
+  s.subspec 'Share' do |sp|
+    sp.dependency 'QqcShare/QRCodeGenerator'
+    sp.source_files = 'QqcShare/Share/*.{h,m}'
   end
 
   s.subspec 'QRCodeGenerator' do |sp|
     sp.source_files = 'QqcShare/QRCodeGenerator/*.{h,m,c}'
-  end
-
-  s.subspec 'ShareProcess' do |sp|
-    sp.dependency 'QqcShare/Header'
-    sp.source_files = 'QqcShare/ShareProcess/*.{h,m}'
-    sp.subspec 'Panel' do |ssp|
-      ssp.source_files = 'QqcShare/ShareProcess/Panel/*.{h,m}'
-    end
   end
 
   s.dependency 'ShareSDK3'
