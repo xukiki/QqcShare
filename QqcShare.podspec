@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
     sp.source_files = 'QqcShare/AuthLoginProcess/QqcAuthLoginProcess.{h,m}'
   end
 
+  s.dependency 'ShareSDK3',:git => ‘https://git.oschina.net/MobClub/ShareSDK-for-iOS.git'
+  s.dependency 'MOBFoundation’
   s.dependency "QqcProgressHUD"
   s.dependency "QqcUtilityUI"
   
