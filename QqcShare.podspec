@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.name         = "QqcShare"
-  s.version      = "1.0.16"
+  s.version      = "1.0.18"
   s.summary      = "QqcShare"
   s.homepage     = "https://github.com/xukiki/QqcShare"
   s.source       = { :git => "https://github.com/xukiki/QqcShare.git", :tag => "#{s.version}" }
@@ -18,12 +18,6 @@ Pod::Spec.new do |s|
     sp.source_files = 'QqcShare/AuthLoginProcess/QqcAuthLoginProcess.{h,m}'
   end
 
-  s.dependency 'ShareSDK3',:git => ‘https://git.oschina.net/MobClub/ShareSDK-for-iOS.git'
-  s.dependency 'MOBFoundation’
-  
-  s.dependency 'ShareSDK3/ShareSDKPlatforms/QQ',:git => ‘https://git.oschina.net/MobClub/ShareSDK-for-iOS.git'
-  s.dependency 'ShareSDK3/ShareSDKPlatforms/SinaWeibo',:git => ‘https://git.oschina.net/MobClub/ShareSDK-for-iOS.git'
-  s.dependency 'ShareSDK3/ShareSDKPlatforms/WeChat',:git => ‘https://git.oschina.net/MobClub/ShareSDK-for-iOS.git'
   s.dependency "QqcProgressHUD"
   s.dependency "QqcUtilityUI"
   
