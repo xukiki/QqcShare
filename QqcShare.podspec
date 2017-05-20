@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.name         = "QqcShare"
-  s.version      = "1.0.28"
+  s.version      = "1.0.30"
   s.summary      = "QqcShare"
   s.homepage     = "https://github.com/xukiki/QqcShare"
   s.source       = { :git => "https://github.com/xukiki/QqcShare.git", :tag => "#{s.version}" }
@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
   s.resource = 'QqcShare/QqcShare.bundle'
 
   s.subspec 'AuthLoginProcess' do |sp|
-    sp.dependency 'QqcShare/'
+    sp.dependency 'QqcShare'
     sp.source_files = 'QqcShare/AuthLoginProcess/QqcAuthLoginProcess.{h,m}'
   end
 
-  s.dependency 'QqcShare/Views/'
+  s.dependency 'QqcShare/Views'
 
   s.dependency 'ShareSDK3'
   s.dependency 'MOBFoundation'
