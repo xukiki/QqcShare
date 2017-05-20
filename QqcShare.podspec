@@ -14,9 +14,7 @@ Pod::Spec.new do |s|
   s.source_files  = ["QqcShare/*.{h,m}"]
   s.resource = 'QqcShare/QqcShare.bundle'
 
-  
 
-  s.dependency 'QqcShare/Views'
 
   s.dependency 'ShareSDK3'
   s.dependency 'MOBFoundation'
