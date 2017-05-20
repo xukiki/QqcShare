@@ -12,5 +12,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/xukiki/QqcShare.git", :tag => "#{s.version}" }
   
   s.source_files  = ["QqcShare/*.{h,m}"]
+  s.resource = 'QqcShare/QqcShare.bundle'
   
 end
