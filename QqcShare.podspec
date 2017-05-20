@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.name         = "QqcShare"
-  s.version      = "1.0.70"
+  s.version      = "1.0.72"
   s.summary      = "QqcShare"
   s.homepage     = "https://github.com/xukiki/QqcShare"
   s.source       = { :git => "https://github.com/xukiki/QqcShare.git", :tag => "#{s.version}" }
@@ -14,9 +14,6 @@ Pod::Spec.new do |s|
   s.resource = 'QqcShare/QqcShare.bundle'
 
   s.subspec 'Header' do |sp|
-    sp.dependency 'AuthLoginProcess'
-    sp.dependency 'ShareProcess'
-    sp.dependency 'Views'
     sp.source_files = 'QqcShare/Header/*.{h,m}'
   end
 
