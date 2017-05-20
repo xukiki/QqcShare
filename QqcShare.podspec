@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.name         = "QqcShare"
-  s.version      = "1.0.22"
+  s.version      = "1.0.24"
   s.summary      = "QqcShare"
   s.homepage     = "https://github.com/xukiki/QqcShare"
   s.source       = { :git => "https://github.com/xukiki/QqcShare.git", :tag => "#{s.version}" }
@@ -20,6 +20,9 @@ Pod::Spec.new do |s|
 
   s.dependency 'ShareSDK3'
   s.dependency 'MOBFoundation'
+  s.dependency 'ShareSDK3/ShareSDKPlatforms/QQ'
+  s.dependency 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+  s.dependency 'ShareSDK3/ShareSDKPlatforms/WeChat'
   s.dependency 'QqcProgressHUD'
   s.dependency 'QqcUtilityUI'
   
