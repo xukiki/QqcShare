@@ -13,5 +13,9 @@ Pod::Spec.new do |s|
   
   s.source_files  = ["QqcShare/*.{h,m}"]
   s.resource = 'QqcShare/QqcShare.bundle'
+
+  s.subspec 'AuthLoginProcess' do |sp|
+    sp.source_files = 'QqcShare/AuthLoginProcess/QqcAuthLoginProcess.{h,m}'
+  end
   
 end
