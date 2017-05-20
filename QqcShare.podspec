@@ -14,24 +14,7 @@ Pod::Spec.new do |s|
   s.source_files  = ["QqcShare/*.{h,m}"]
   s.resource = 'QqcShare/QqcShare.bundle'
 
-  s.subspec 'AuthLoginProcess' do |sp|
-    sp.dependency 'QqcShare'
-    sp.source_files = 'QqcShare/AuthLoginProcess/QqcAuthLoginProcess.{h,m}'
-  end
-
-  s.subspec 'QRCodeGenerator' do |sp|
-    sp.source_files = 'QqcShare/QRCodeGenerator/*.{h,m,c}'
-  end
-
-  s.subspec 'ShareProcess' do |sp|
-    sp.source_files = 'QqcShare/ShareProcess/*.{h,m}'
-  end
-
-  s.subspec 'Views' do |sp|
-    sp.source_files = 'QqcShare/Views/*.{h,m}'
-    sp.subspec 'Panel' do |ssp|
-      ssp.source_files = 'QqcShare/Views/Panel/*.{h,m}'
-  end
+  
 
   s.dependency 'QqcShare/Views'
 
