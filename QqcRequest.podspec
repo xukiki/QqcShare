@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.subspec 'Views' do |sp|
     sp.source_files = 'QqcShare/Views/*.{h,m}'
     sp.subspec 'Panel' do |ssp|
-      sss.source_files = 'QqcShare/Views/Panel/*.{h,m}'
+      ssp.source_files = 'QqcShare/Views/Panel/*.{h,m}'
     end
   end
 
