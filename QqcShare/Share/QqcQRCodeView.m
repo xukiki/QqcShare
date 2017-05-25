@@ -49,7 +49,7 @@
         UIButton *closeButton = [[UIButton alloc] initWithFrame:CGRectMake(width - 36, 0, 36, 36)];
         [closeButton addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
         
-        NSString* strPath = [[NSBundle mainBundle] pathForResource:@"QqcShareFrameworkRES" ofType:@"bundle"];
+        NSString* strPath = [[NSBundle mainBundle] pathForResource:@"QqcShare" ofType:@"bundle"];
         NSBundle* bundle = [[NSBundle alloc] initWithPath:strPath];
         [closeButton setImage:[self getImgFromBundle:bundle img:@"icon_close_gray.png"] forState:UIControlStateNormal];
         [contentView addSubview:closeButton];
